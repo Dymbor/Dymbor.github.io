@@ -1,0 +1,79 @@
+body {
+    font-family: 'Jua', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}
+
+header{
+    background-color: #94E1F2; /* à mettre plus tard dans un fichier séparer pour les couleurs*/
+    padding-top: 1vh;
+     padding: 1vh 2vw; /* padding vertical et horizontal */
+}
+
+.headerPartieHaute{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.headerPartieHaute > #Logo{
+    grid-column: 3;
+    justify-self: center;
+    
+    height: 15vh;
+    max-height: 150px;
+    min-height: 100px;
+}
+
+.headerPartieHaute > #Parametre{
+    grid-column: 5;
+    justify-self: end;
+    padding: 1vh;
+    transition: transform 0.3s ease;
+
+    height: 5vh;
+    max-height: 50px;
+}
+
+.headerPartieHaute > #Parametre:hover{
+    transform: rotate(30deg);
+}
+
+.headerPartieBasse{
+    padding-top: 1vh ;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+.headerPartieBasse > #TexteLogo{
+    font-weight: bold ;
+    font-size:x-large;
+    color: #A74F4C
+}
+
+.headerPartieBasse > a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainteance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mainteance > h1{
+    color: #94E1F2;
+}
+
+.mainteance > h2{
+    color: #8BE2C4;
+}
+
+.mainteance > #LogoMainteance{
+    height: 50vh;
+    max-height: 470px;
+    min-height: 250px;
+}
